@@ -6,7 +6,6 @@
   "scripts": {
     "db:latest": "knex migrate:latest",
     "db:seed": "knex seed:run",
-
     "server": "nodemon index.js"
   },
   "author": "Lambda School",
@@ -14,6 +13,9 @@
     "nodemon": "^1.19.4"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "helmet": "^3.21.2",
+    "knex": "^0.20.8",
+    "sqlite3": "^4.1.1"
   }
 }
