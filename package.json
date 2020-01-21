@@ -4,10 +4,16 @@
   "description": "Node DB 2 Module Challenge",
   "main": "index.js",
   "scripts": {
+    "db:latest": "knex migrate:latest",
+    "db:seed": "knex seed:run",
+
     "server": "nodemon index.js"
   },
   "author": "Lambda School",
   "devDependencies": {
     "nodemon": "^1.19.4"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }
